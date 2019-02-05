@@ -19,10 +19,10 @@
                 <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
                 <ul id="site-list" class="main-nav__site-list site-list">
                     <li class="site-list__item"><a href="#about">О нас</a></li>
-                    <li class="site-list__item"><a href="#about">Услуги</a></li>
-                    <li class="site-list__item"><a href="#about">Отзывы</a></li>
-                    <li class="site-list__item"><a href="#about">Faq</a></li>
-                    <li class="site-list__item"><a href="#about">Контакты</a></li>
+                    <li class="site-list__item"><a href="#services">Услуги</a></li>
+                    <li class="site-list__item"><a href="#services">Отзывы</a></li>
+                    <li class="site-list__item"><a href="#services">Faq</a></li>
+                    <li class="site-list__item"><a href="#services">Контакты</a></li>
                 </ul>
                 <!-- /.main-nav__site-list -->
                 <ul id="user-list" class="main-nav__user-list user-list">
@@ -35,6 +35,7 @@
         </div>
         <!-- /.container -->
     </header>
+    <!-- /header -->
     <section class="banner">
         <div class="container">
             <img class="banner__img" src="image/banner/banner-img.png" alt="Баннер">
@@ -52,8 +53,8 @@
     </section>
     <!-- /.banner -->
     <srction id="about" class="about">
-        <div class="content">
-            <div class="about__block-text">
+        <div class="container">
+            <div class="about__block">
                 <h2>1. О нас</h2>
                 <h3>Полный спектр услуг — от дизайна до печати</h3>
                 <p class="about__text">К вашим услугам мы предлагаем полный спектр работ, начиная от печати открыток, чертежей, баннеров,
@@ -103,9 +104,62 @@
         <!-- /.content -->
     </srction>
     <!-- /.about -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="services__block">
+                <h2>2. Услуги</h2>
+                <h3>Широкоформатная печать баннеров, растяжек, афиш</h3>
+                <ul class="services__list">
+                    <li class="services__item">подготовка макетов к печати, дизайн рекламных баннеров</li>
+                    <li class="services__item">срочная печать за 3 часа</li>
+                    <li class="services__item">проварка карманов и сварка нескольких изображений</li>
+                    <li class="services__item">пробивка люверсов и вварка монтажных тросов</li>
+                    <li class="services__item">изготовление цветопробы</li>
+                    <li class="services__item">доставка баннеров</li>
+                </ul>
+            </div>
+            <div class="services__blick-slider">
+                <div class="services__slider">
+                    <div class="services__slide"><img src="image/services/slides/1-min.jpg" alt="" class="sl__img"></div>
+                    <div class="services__slide"><img src="image/services/slides/2-min.jpg" alt="" class="sl__img"></div>
+                    <div class="services__slide"><img src="image/services/slides/3-min.jpg" alt="" class="sl__img"></div>
+                    <div class="services__slide"><img src="image/services/slides/4-min.jpg" alt="" class="sl__img"></div>
+                    <div class="services__slide"><img src="image/services/slides/5-min.jpg" alt="" class="sl__img"></div>
+                    <div class="services__slide"><img src="image/services/slides/6-min.jpg" alt="" class="sl__img"></div>
+                    <div class="services__slide"><img src="image/services/slides/7-min.jpg" alt="" class="sl__img"></div>
+                </div>
+                <p class="services__desc">Растяжка на ул. Ленина</p>
+            </div>
+            <div class="services__blick-question">
+                <span class="services__question">Есть вопросы?</span>
+                <span class="services__answer">
+                    <strong>Закажите консультацию</strong>
+                </span>
+                <button class="services__button btn">Заказать</button>
+            </div>
+    
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.services -->
 
     
 
-<script src="js/all.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.services__slider').slick({
+                dots: false,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear',
+                slidesToScroll: 1
+            });
+        });</script>
+    <script src="js/all.js"></script>
 </body>
 </html>
