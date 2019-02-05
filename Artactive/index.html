@@ -18,11 +18,11 @@
             <nav class="main-nav">
                 <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
                 <ul id="site-list" class="main-nav__site-list site-list">
-                    <li class="site-list__item"><a href="#">О нас</a></li>
-                    <li class="site-list__item"><a href="#">Услуги</a></li>
-                    <li class="site-list__item"><a href="#">Отзывы</a></li>
-                    <li class="site-list__item"><a href="#">Faq</a></li>
-                    <li class="site-list__item"><a href="#">Контакты</a></li>
+                    <li class="site-list__item"><a href="#about">О нас</a></li>
+                    <li class="site-list__item"><a href="#about">Услуги</a></li>
+                    <li class="site-list__item"><a href="#about">Отзывы</a></li>
+                    <li class="site-list__item"><a href="#about">Faq</a></li>
+                    <li class="site-list__item"><a href="#about">Контакты</a></li>
                 </ul>
                 <!-- /.main-nav__site-list -->
                 <ul id="user-list" class="main-nav__user-list user-list">
@@ -37,7 +37,7 @@
     </header>
     <section class="banner">
         <div class="container">
-            <img class="banner__img" src="image/banner-img.png" alt="Баннер">
+            <img class="banner__img" src="image/banner/banner-img.png" alt="Баннер">
             <div class="banner__text">
                 <h2 class="banner__title">Размер <br> не имеет <br> значения!</h2>
                 <!-- /.banner__title -->
@@ -46,11 +46,63 @@
                 <button class="banner__button btn">Заказать печать</button>
                 <!-- /.banner__button -->
             </div>
-            <a class="next-section" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="31"><defs><path id="a" d="M951 851.5a9.5 9.5 0 1 1 19 0v12a9.5 9.5 0 1 1-19 0z"/><path id="b" d="M960 849.5a.5.5 0 0 1 1 0v4a.5.5 0 0 1-1 0z"/><clipPath id="c"><use fill="#fff" xlink:href="#a"/></clipPath><clipPath id="d"><use fill="#fff" xlink:href="#b"/></clipPath></defs><use fill="#fff" fill-opacity="0" stroke="#fff" stroke-miterlimit="50" stroke-width="4" clip-path="url(&quot;#c&quot;)" xlink:href="#a" transform="translate(-951 -842)"/><use fill="#fff" fill-opacity="0" stroke="#fff" stroke-miterlimit="50" stroke-width="4" clip-path="url(&quot;#d&quot;)" xlink:href="#b" transform="translate(-951 -842)"/></svg></a>
+            <a class="next-section" href="#about"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="31"><defs><path id="a" d="M951 851.5a9.5 9.5 0 1 1 19 0v12a9.5 9.5 0 1 1-19 0z"/><path id="b" d="M960 849.5a.5.5 0 0 1 1 0v4a.5.5 0 0 1-1 0z"/><clipPath id="c"><use fill="#fff" xlink:href="#a"/></clipPath><clipPath id="d"><use fill="#fff" xlink:href="#b"/></clipPath></defs><use fill="#fff" fill-opacity="0" stroke="#fff" stroke-miterlimit="50" stroke-width="4" clip-path="url(&quot;#c&quot;)" xlink:href="#a" transform="translate(-951 -842)"/><use fill="#fff" fill-opacity="0" stroke="#fff" stroke-miterlimit="50" stroke-width="4" clip-path="url(&quot;#d&quot;)" xlink:href="#b" transform="translate(-951 -842)"/></svg></a>
         </div>
         <!-- /.container -->
     </section>
     <!-- /.banner -->
+    <srction id="about" class="about">
+        <div class="content">
+            <div class="about__block-text">
+                <h2>1. О нас</h2>
+                <h3>Полный спектр услуг — от дизайна до печати</h3>
+                <p class="about__text">К вашим услугам мы предлагаем полный спектр работ, начиная от печати открыток, чертежей, баннеров,
+                    растяжек, создания буклетов и эксклюзивных календарей, и заканчивая постпечатной обработкой.</p>
+                <p class="about__text">В копицентре не просто предоставляют услуги печати: мы ориентируемся на комплексное обслуживание.
+                    Все услуги, будь то оперативная цифровая печать открыток или разработка серии календарей, Вы можете
+                    получить в одном месте, воспользовавшись сопутствующими услугами копицентра.</p>
+                <p class="about__text">При этом работа выполняется в максимально сжатые сроки и не в ущерб качеству конечного результата,
+                    которое неизменно остается на высоте.</p>
+            </div>
+            <!-- /.about__text -->
+            <div class="about__steps">
+                <picture>
+                    <source media="(min-width:1170px)" srcset="image/about/about-arrows__1170.png">
+                    <source media="(min-width:750px)"  srcset="image/about/about-arrows__750.png">
+                    <img class="steps-bg" src="image/about/about-arrows.png" alt="Стрелки">
+                </picture>
+    
+                <div class="about__item about__item-book">
+                    <div class="about__box">
+                        <img class="about__book" src="image/about/about-book.png" alt="Книга">
+                    </div>
+                    <p class="about__description">Приём и детальное обсуждение заказа</p>
+                </div>
+                <div class="about__item about__item-tablet">
+                    <div class="about__box">
+                        <img class="about__book" src="image/about/about-tablet.png" alt="Планшет">
+                    </div>
+                    <p class="about__description">Создание и согласование дизайн-макета</p>
+                </div>
+                <div class="about__item about__item-writer">
+                    <div class="about__box">
+                        <img class="about__book" src="image/about/about-writer.png" alt="Бумага">
+                    </div>
+                    <p class="about__description">Печать и постпечатная обработка изделий любых размеров</p>
+                </div>
+                <div class="about__item about__item-moving">
+                    <div class="about__box">
+                        <img class="about__book" src="image/about/about-moving.png" alt="Машина">
+                    </div>
+                    <p class="about__description">Доставка готовой продукции</p>
+                </div>
+    
+            </div>
+            <!-- /.about__img -->
+        </div>
+        <!-- /.content -->
+    </srction>
+    <!-- /.about -->
 
     
 
