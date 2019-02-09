@@ -97,7 +97,6 @@
                     </div>
                     <p class="about__description">Доставка готовой продукции</p>
                 </div>
-    
             </div>
             <!-- /.about__img -->
         </div>
@@ -150,7 +149,7 @@
         </div>
         <!-- /.container -->
     </section>
-    <!-- /.services -->
+    <!-- /.services-one -->
     <section id="services" class="services-two">
         <div class="container">
             <div class="services-two__block">
@@ -174,7 +173,7 @@
         </div>
         <!-- /.container -->
     </section>
-    <!-- /.services -->
+    <!-- /.services-two -->
     <section id="services" class="services-three">
         <div class="container">
             <div class="services-three__block">
@@ -192,31 +191,28 @@
             <div class="services-three__block-img">
                 <img src="image/services/three/corporate-style.png" alt="">
             </div>
-    
-            <div class="services-three__block-form">
-                <form action="" class="form">
-                    <div class="form__block-question">
-                        <span class="form__question">Есть вопросы?</span>
-                        <span class="form__answer">
-                            <strong>Оставьте заявкуна на консультацию</strong>
-                        </span>
-                    </div>
-                    <label class="form__label form__label-name" for="name">
-                        <input id="name" type="text" placeholder="">
-                    </label>
-                    <label class="form__label form__label-tel" for="tel">
-                        <input id="tel" type="tel" placeholder="">
-                    </label>
-                    <button class="form__button btn">Отправить</button>
-                </form>
-                <div class="services-three__plane">
-                    <img class="services-three__plane-img" src="image/services/three/plane.png" alt="Самолет">
+            <form action="get" class="form">
+                <div class="form__block-question">
+                    <span class="form__text">Есть вопросы?</span>
+                    <span class="form__text-b"><strong>Оставьте заявкуна на консультацию</strong></span>
                 </div>
-            </div>
+                <div class="form__item">
+                    <input class="form__input" id="name" type="text" autocomplete="off" required>
+                    <label class="form__label form__label-name" for="name">Имя</label>
+                </div>
+                <div class="form__item">
+                    <input class="form__input" id="tel" type="tel" autocomplete="off" required>
+                    <label class="form__label form__label-tel" for="tel">Телефон</label>
+                </div>
+                <button type="submit" class="form__button btn">Отправить</button>
+                <div class="form__plane">
+                    <img class="form__plane-img" src="image/services/three/plane.png" alt="Самолет">
+                </div>
+            </form>
         </div>
         <!-- /.container -->
     </section>
-    <!-- /.services -->
+    <!-- /.services-three -->
     <section id="reviews" class="reviews">
         <div class="container">
                 <h2>3. Отзывы</h2>
@@ -244,7 +240,8 @@
                                 <img src="image/reviews/3.jpg" alt="">
                             </div>
                             <div class="reviews__wrap-content">
-                                <p class="reviews__text">Я тащер какток в пубг и меня ни кто не ценит за то что я особенный!!!!!!!!!!!</p>
+                                <p class="reviews__text">Я тащер каток в пубг и меня ни кто не ценит
+                                    за то что я уникальный!!!!!!!!!!!</p>
                                 <span class="reviews__name">Антонов Владислав</span><span class="reviews__age">23 года</span>
                                 <a href="https://vk.com/d1zz3r0n3" target="_blank" class="reviews__link">vk.com/d1zz3r0n3</a>
                             </div>
@@ -259,7 +256,7 @@
                             <div class="reviews__wrap-content">
                                 <p class="reviews__text">Я лагаю но пытаюсь тащить, очень нравится работать на заводе, пойдете
                                     сегодня ко мне в баню!!!</p>
-                                <span class="reviews__name">Попов Леонид</span><span class="reviews__age">13 лет</span>
+                                <span class="reviews__name">Попов Леонид</span><span class="reviews__age">24 года</span>
                                 <a href="https://vk.com/id68387195" target="_blank" class="reviews__link">vk.com/id68387195</a>
                             </div>
                         </div>
@@ -268,7 +265,55 @@
         </div>
         <!-- /.container -->
     </section>
-    <!-- /.services -->
+    <!-- /.reviews -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>4. Частые вопросы (FAQ)</h2>
+            <div class="faq__content">
+                <div class="faq__block">
+                    <h4>Что такое макет?</h4>
+                    <p class="faq__help">Макет — это будущее печатное изделие в электронном формате.
+                        Верстают (собирают) макет в специализированном программном обеспечении. </p>
+                    <h4>У меня есть готовый макет</h4>
+                    <p class="faq__help">Вы можете привезти его к нам в офис на любом удобном для вас
+                        носителе (диск, флешка). В присутствии вас мы обработаем ваш макет и отправим его в производство.</p>
+                    <h4>У меня нет макета</h4>
+                    <p class="faq__help">В нашем штате работают професиональные дизайнеры, которые с ваших слов или в
+                        вашем присутствии сверстают макет, который после утверждения также будет отправлен в печать.</p>
+                </div>
+                <div class="faq__block">
+                    <h4>Сколько времени занимает печать?</h4>
+                    <p class="faq__help">В том случае если изображение готово к печати, изготовление занимает около 3 часов.
+                        Также время изготовления зависит от нашей загруженности.</p>
+                    <h4>Я не могу приехать к вам в офис</h4>
+                    <p class="faq__help">Отправьте нам изображение по электронной почте, укажите свой телефон.
+                        Мы свяжемся с вами для уточнения деталей. Готовое изделие мы доставим вам курьером.</p>
+                    <h4>Вызов курьера бесплатный?</h4>
+                    <p class="faq__help">В зависимости от соимости заказа, курьер может доставить вам продукцию бесплатно
+                        (при соимости от 600 руб.) или от 150 руб. в пределах Ярославля и до 500 руб.
+                        в пределах Ярославской области.</p>
+                </div>
+            </div>
+            <form action="get" class="form form-main">
+                <div class="form__block-question">
+                    <span class="form__text form-main__text">Остались вопросы?</span>
+                    <span class="form__text-b form-main__text-b"><strong>Оставьте заявку на консультацию</strong></span>
+                </div>
+                <div class="form__item form-main__item">
+                    <input class="form__input form-main__input" id="name" type="text" autocomplete="off" required>
+                    <label class="form__label form-main__label form__label-name" for="name">Имя</label>
+                </div>
+                <div class="form__item form-main__item">
+                    <input class="form__input form-main__input" id="tel" type="tel" autocomplete="off" required>
+                    <label class="form__label form-main__label form__label-tel" for="tel">Телефон</label>
+                </div>
+                <button type="submit" class="form__button form-main__button btn">Отправить</button>
+            </form>
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.faq -->
+    
 
     
 
