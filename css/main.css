@@ -482,6 +482,8 @@ ol {
   }
   .works-2 {
     background-image: url("../image/Creative.jpg")
+  }.works-3 {
+    background-image: url("../image/Weatherapp.jpg")
   }
     .works__item a {
       display: block;
