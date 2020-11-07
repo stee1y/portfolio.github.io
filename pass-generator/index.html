@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    
+    <div id="help" class="overlay">
+        <div class="overlay-popup">
+            <h3 class="overlay-popup__title">Выберите хотя бы один из выриантов для генерации!</h3>
+    
+            <button id="closet-help" type="button" class="btn">Я понял!</button>
+        </div>
+        <!-- /.popup -->
+    </div>
+    <!-- /.overlay -->
+    
+    
+    
+    
+    <div id="out"></div><!-- /.out -->
+    <div id="gen" class="block">
+        <h1>Генератор паролей</h1>
+        <ul class="generator">
+            <li class="generator-item">
+                <label class="generator-item__label" for="line-length">Длина строки
+                    (<span id="length">8</span>) <br>
+                    <input id="line-length" type="range" value="8" min="6" max="50" class="generator-item__input">
+                <!-- /.generator-item__input -->
+                </label>
+            </li>
+            <!-- /.generator-item -->
+    
+            <li class="generator-item">
+                <label class="generator-item__label" for="line-length">Количество паролей
+                    (<span id="number-pass">3</span>) <br>
+                    <input id="number-password" type="range" value="3" min="1" max="10" class="generator-item__input">
+                    <!-- /.generator-item__input -->
+                </label>
+            </li>
+            <!-- /.generator-item -->
+    
+            <li class="generator-item">
+                <label for="numbers">
+                    <input id="numbers" checked type="checkbox" class="generator-item__input"><!-- /.generator-item__input -->
+                    Цифры
+                </label>
+            </li>
+            <!-- /.generator-item -->
+            <li class="generator-item">
+                <label for="small-letters">
+                    <input id="small-letters" checked type="checkbox" class="generator-item__input"><!-- /.generator-item__input -->
+                    Строчные буквы
+                </label>
+            </li>
+            <!-- /.generator-item -->
+            <li class="generator-item">
+                <label for="big-letters">
+                    <input id="big-letters" type="checkbox" class="generator-item__input"><!-- /.generator-item__input -->
+                    Прописные буквы
+                </label>
+            </li>
+            <!-- /.generator-item -->
+            <li class="generator-item">
+                <label for="special-characters">
+                    <input id="special-characters" type="checkbox" class="generator-item__input"><!-- /.generator-item__input -->
+                    Спецсимволы
+                </label>
+            </li>
+            <!-- /.generator-item -->
+        </ul>
+        <!-- /.generator -->
+        <button id="generator" type="button" class="btn">Генерировать</button>
+    </div>
+    <!-- /.block -->
+    <script src="js/generator.js"></script>
+</body>
+</html>

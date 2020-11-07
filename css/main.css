@@ -536,6 +536,8 @@ body {
   padding: 0;
   color: #fff;
   font-weight: 300;
+  justify-content: space-between;
+  overflow-y: auto;
 }
 .skills-list .skills-list__item {
   display: -webkit-box;
@@ -547,31 +549,8 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 40%;
-  margin: 20px;
+  margin: 10px;
   list-style: none;
-}
-.skills-list .skills-list__name {
-  font-size: 1.25em;
-}
-.skills-list .skills-list__line {
-  display: block;
-  position: relative;
-  right: 0;
-  width: 50%;
-  height: 6px;
-  background-color: #fff;
-  border-radius: 5px;
-}
-.skills-list .skills-list__line--active {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  width: 40%;
-  height: 6px;
-  background-color: darkorange;
-  border-radius: 5px;
 }
 .portfolio {
   display: -webkit-box;
@@ -615,11 +594,12 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  height: 55vh;
+  width: 100%;
+  height: 80%;
   -ms-flex-pack: distribute;
   justify-content: space-around;
   text-align: center;
-  margin: auto 40px;
+  margin-top: 10vh;
   padding: 0;
   color: #fff;
   font-weight: 300;
@@ -725,6 +705,9 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+.overlay--portfolio {
+  display: block;
+}
 .overlay--hidden {
   opacity: 0;
 }
@@ -757,9 +740,6 @@ body {
 @media screen and (max-width: 1000px) {
   .main .skills .skills__block {
     width: 80%;
-  }
-  .main .skills .skills__block .skills-list__item {
-    width: 100%;
   }
   .main--open,
   .header--open {
@@ -804,6 +784,12 @@ body {
     width: 100%;
   }
 }
+@media screen and (max-height: 320px) {
+  .portfolio-list {
+    height: 250px;
+  }
+}
+
 @media screen and (orientation: portrait) and (max-width: 720px) {
   .header--open {
     width: 100%;
@@ -928,10 +914,9 @@ body {
     font-size: 1em;
     line-height: 1.1em;
   }
-  .main .portfolio .portfolio-list {
-    height: 35vh;
-    margin: auto 15px 15px;
-  }
+  /* .main .portfolio .portfolio-list {
+    height: 80%;
+  } */
   .main .portfolio .portfolio-list .portfolio-list__item {
     width: 75px;
     height: 125px;
@@ -1107,9 +1092,6 @@ body {
     flex-wrap: wrap;
     width: 100%;
   }
-  .main .skills .skills__block .skills-list__item {
-    width: 40%;
-  }
   .main .portfolio .portfolio__title {
     font-size: 1.75em;
     margin: 10px auto;
@@ -1119,7 +1101,6 @@ body {
     line-height: 1.1em;
   }
   .main .portfolio .portfolio-list {
-    height: 35vh;
     margin: auto 15px 15px;
   }
   .main .portfolio .portfolio-list .portfolio-list__item {
