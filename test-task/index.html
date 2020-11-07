@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/font.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Верстка окна лицензий</title>
+  </head>
+  <body>
+    <div class="tariffs">
+      <form class="tariffs-form">
+        <div class="tariff active">
+          <input
+            id="tariff-one"
+            type="radio"
+            name="tariff"
+            value="13"
+            data-tariff="1"
+            checked
+          />
+          <label class="tariff__label" for="tariff-one">
+            <div class="tariff__name">licenseplan#1</div>
+            <span class="tariff__info">$13 per license</span></label
+          >
+        </div>
+        <div class="tariff">
+          <input
+            id="tariff-two"
+            type="radio"
+            name="tariff"
+            value="22"
+            data-tariff="2"
+          />
+          <label class="tariff__label" for="tariff-two">
+            <div class="tariff__name">licenseplan#2</div>
+            <span class="tariff__info">$22 per license</span></label
+          >
+        </div>
+        <div class="tariff">
+          <input
+            id="tariff-three"
+            type="radio"
+            name="tariff"
+            value="34"
+            data-tariff="3"
+          />
+          <label class="tariff__label" for="tariff-three"
+            ><div class="tariff__name">licenseplan#3</div>
+            <span class="tariff__info">$34 per license</span></label
+          >
+        </div>
+        <div class="tariff__period">
+          <label class="period-label" for="period"
+            >Number of license
+            <select name="price" id="period">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+          </label>
+        </div>
+        <div class="tariff__total">
+          Total:
+          <span class="total">$13</span>
+        </div>
+        <div class="tariff__order">
+          <input class="btn" type="submit" value="Buy Now" />
+        </div>
+        <div class="tariff_plan">Selected plan: #3</div>
+      </form>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

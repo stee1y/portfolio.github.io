@@ -746,7 +746,7 @@ body {
     height: 100vh;
   }
   .header .help {
-    top: 55%;
+    top: 52%;
   }
   .footer {
     position: absolute;
@@ -934,7 +934,7 @@ body {
   }
   .main .contact__block--map {
     max-width: 270px;
-    min-height: 400px;
+    min-height: 300px;
   }
 }
 @media screen and (orientation: portrait) and (max-width: 320px) and (max-height: 600px) {
