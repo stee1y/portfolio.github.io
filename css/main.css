@@ -169,6 +169,7 @@ body {
   -ms-flex-pack: distribute;
   justify-content: space-around;
   margin-left: 20%;
+  padding: 0;
 }
 .navigation .navigation__item {
   list-style: none;
