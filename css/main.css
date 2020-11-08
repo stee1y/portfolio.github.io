@@ -264,6 +264,10 @@ body {
   -webkit-transition: all ease 1s;
   transition: all ease 1s;
 }
+.social-list__item span {
+  overflow: hidden;
+  font-size: 0;
+}
 .header .social-list .social-list__item {
   list-style: none;
   margin: 0 10px;
@@ -409,7 +413,7 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   width: auto;
-  height: 60%;
+  height: 55%;
   -ms-flex-pack: distribute;
   justify-content: space-around;
   padding: 0;
